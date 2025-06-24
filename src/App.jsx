@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import eruda from "eruda";
+
 const ALLOWED_USERS = [482569855, 98765432];
 const API_ENDPOINT = "http://localhost:8000/send/";
 
@@ -9,6 +11,7 @@ const App = () => {
   const [userAllowed, setUserAllowed] = useState(false);
 
   useEffect(() => {
+    eruda.init();
     const telegram = window.Telegram.WebApp;
     telegram.ready();
     telegram.expand();
