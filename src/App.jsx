@@ -38,7 +38,7 @@ const App = () => {
         }),
       });
 
-      // tg.close(); 
+      tg.close(); 
     } catch (error) {
       alert('Xatolik yuz berdi.');
       console.error(error);
