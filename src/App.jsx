@@ -26,6 +26,8 @@ const App = () => {
   const handleSend = async () => {
     if (!message.trim()) return;
 
+    console.log("INit Data:", tg?.initData);
+
     try {
       await fetch(API_ENDPOINT, {
         method: 'POST',
