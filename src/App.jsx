@@ -9,7 +9,7 @@ const App = () => {
   const [userAllowed, setUserAllowed] = useState(false);
 
   useEffect(() => {
-    const telegram = (window).Telegram.WebApp;
+    const telegram = window.Telegram.WebApp;
     telegram.ready();
     telegram.expand();
     setTg(telegram);
